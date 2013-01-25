@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;packet.ace&apos; to &apos;Ace&apos;&#x0A;- Original project: &apos;EclimTest3&apos;&#x0A;- Original element: &apos;packet.ace&apos;&#x0A;- Renamed element: &apos;packet.Ace&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ace&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;packet{ace.java[ace" matchStrategy="1" name="Ace" qualified="false" references="true" similarDeclarations="false" stamp="1358115418693" textual="false" version="1.0"/>
+</session>

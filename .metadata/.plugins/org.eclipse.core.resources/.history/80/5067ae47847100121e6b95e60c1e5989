@@ -1,0 +1,27 @@
+package warehouse;
+
+import java.io.FileNotFoundException;
+
+class Supplier {
+    protected String __Name__;
+    Brain __brain__;
+
+    public Supplier(String supplierName) throws FileNotFoundException {
+        __Name__ = supplierName;
+        __brain__ = new Brain();
+    }
+
+    public String getName() {
+        return __Name__;
+    }
+
+    public void printItemsInInventory() {
+        ArrayList<Item> itemList = __brain__.getItemList();
+        for(int i=0; i<itemList.s; i++) {
+
+        }
+        __brain__.getItemList().get(i);
+        __brain__.printItem();
+    }
+
+}

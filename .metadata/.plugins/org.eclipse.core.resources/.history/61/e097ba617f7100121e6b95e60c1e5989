@@ -1,0 +1,13 @@
+package warehouse;
+
+class Supplier {
+    protected String __Name__;
+    public Supplier(String supplierName) {
+        __Name__ = supplierName;
+        Brain __brain = new Brain();
+    }
+
+    public String getName() {
+        return __Name__;
+    }
+}

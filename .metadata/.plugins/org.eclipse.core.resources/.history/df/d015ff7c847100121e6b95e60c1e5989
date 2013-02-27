@@ -1,0 +1,11 @@
+package warehouse;
+
+class Listing {
+    public Listing() {
+        // only list one supplier for now
+        // ideally, open up a list of suppliers from a file
+        Supplier onlySupplier = new Supplier("JamesCompany");
+        onlySupplier.printItemsInInventory();
+
+    }
+}

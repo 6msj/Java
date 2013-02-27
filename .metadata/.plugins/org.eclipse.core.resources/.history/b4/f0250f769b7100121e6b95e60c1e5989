@@ -1,0 +1,148 @@
+package warehouse;
+
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.BufferedWriter;
+import java.io.IOException;
+
+class Listing {
+    protected ArrayList<Supplier> listSuppliers;
+    Scanner userInputGetter;
+
+    public Listing() throws FileNotFoundException {
+        userInputGetter = new Scanner(System.in);
+        listSuppliers = new ArrayList<Supplier>();
+        // only list one supplier for now
+        // ideally, open up a list of suppliers from a file
+        Supplier onlySupplier = new Supplier("James Company");
+        listSuppliers.add(onlySupplier);
+        printItemsInInventory();
+    }
+
+    public void askUserForSupplier() throws IOException {
+        String whichSupplier;
+        System.out.println("Which supplier do you want to order from? > ");
+        whichSupplier = userInputGetter.nextLine();
+        Supplier oneSupplier;
+        for(int numSuppliers=0; numSuppliers<listSuppliers.size(); numSuppliers++) {
+            oneSupplier = listSuppliers.get(numSuppliers);
+           // System.out.println(oneSupplier.getName());
+            System.out.println(whichSupplier);
+            if(whichSupplier == oneSupplier.getName()) {
+                printItemsInInventoryOfSupplier(oneSupplier);
+                getUsersOrder(oneSupplier);
+                System.out.println(oneSupplier.getName());
+                return;
+            }
+        }
+        System.out.println("Supplier could not be found!");
+    }
+
+    public Order getUsersOrder(Supplier oneSupplier) throws IOException  {
+        String whichItemID;
+        ArrayList<Item> itemsFromSupplier = oneSupplier.getItemsInInventory();
+        Order newOrder = new Order(); // create a new order for this user
+        boolean userBuying = true;
+        while(userBuying) {
+            System.out.println("What would you like to order from " + oneSupplier + "? > ");
+
+            readFromFile(oneSupplier); // print past orders from file before continuing
+            whichItemID = userInputGetter.next(); // get the order by asking which itemID the user wants
+            for(int i=0; i<itemsFromSupplier.size(); i++) {
+                if(whichItemID == itemsFromSupplier.get(i).getName()) {
+                    int quantity = askUserForQuantity();
+                    newOrder.addItem(itemsFromSupplier.get(i), quantity); // after asking the user for the quantity, add the the item to the order
+                }
+            }
+            System.out.println("The current total price is " + newOrder.getTotalPrice() + ".");
+            userBuying = askUserIfStillBuying(); // are they still buying
+        }
+        String date = askUserForCurrentDate();
+        newOrder.recordDate(date); // arbitrary date from the user
+        oneSupplier.addOrderToBrain(newOrder); // add order to brain
+        saveToFile(oneSupplier);
+        return newOrder; // return the order to the user
+    }
+
+    public void saveToFile(Supplier oneSupplier) throws IOException {
+        // saves order information to the file
+        ArrayList<Order> orders = oneSupplier.callBrainToGetOrders();
+        for(int singleorder=0; singleorder<orders.size(); singleorder++) {
+            Order oneOrder = orders.get(singleorder);
+            String content = oneOrder.returnForFileFormat();
+            File file = new File("orderItems.txt");
+            if (!file.exists()) file.createNewFile(); // create if it doesn't exist
+            FileWriter filewriter = new FileWriter(file.getAbsoluteFile());
+            BufferedWriter bufferedwriter = new BufferedWriter(filewriter);
+            bufferedwriter.write(content);
+            bufferedwriter.close();
+            System.out.println("Saving...");
+        }
+    }
+
+    public void readFromFile(Supplier oneSupplier) throws FileNotFoundException {
+        // retrieve order information from file
+        // itemid, name, description, price, quantity, orderPaidFor
+        printPastOrders(oneSupplier.callBrainToGetOrders());
+    }
+
+    public void printPastOrders(ArrayList<Order> supplierOrders) {
+        // print the orders from the file
+
+    }
+
+    public void printItemsInInventoryOfSupplier(Supplier oneSupplier) {
+            System.out.println("Items in inventory of Supplier: " + oneSupplier.getName());
+            System.out.println("-----------------------------------------------");
+            ArrayList<Item> printThis = oneSupplier.getItemsInInventory();
+            for(int numItems=0; numItems<printThis.size(); numItems++) {
+                printItem(printThis.get(numItems));
+            }
+            System.out.println("***********************************************");
+    }
+
+    public void printItemsInInventory() {
+        for(int numSuppliers=0; numSuppliers<listSuppliers.size(); numSuppliers++) {
+            printItemsInInventoryOfSupplier(listSuppliers.get(numSuppliers));
+        }
+    }
+
+    public void printItem(Item __item__) {
+        System.out.print(__item__.getID() + " ");
+        System.out.print(__item__.getName() + " ");
+        System.out.print(__item__.getDescription() + " ");
+        System.out.println(__item__.getPrice() + " ");
+    }
+
+    public int askUserForQuantity() {
+        int __quan;
+        System.out.println("How much do you want? > ");
+        __quan = userInputGetter.nextInt();
+        return __quan;
+    }
+
+    public boolean askUserIfStillBuying() {
+        String yesno;
+        System.out.println("Are you still buying? [y/n] > ");
+        yesno = userInputGetter.next();
+        if(yesno == "y") return true;
+        return false;
+    }
+
+    public String askUserForCurrentDate() {
+        String currentDate;
+        System.out.println("What is the date?");
+        currentDate = userInputGetter.next();
+        return currentDate;
+    }
+
+
+}
+
+
+
+
+

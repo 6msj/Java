@@ -8,5 +8,21 @@
     "coordinate": "jre:jre:zip:call:1.0.0",
     "location": "/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar",
     "status": "RESOLVED"
+  },
+  "/Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/lib/rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "/Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/lib/rt.jar",
+    "status": "RESOLVED",
+    "error": "No class path info available for \u0027/Library/Java/JavaVirtualMachines/jdk1.7.0_11.jdk/Contents/Home/jre/lib/rt.jar\u0027. Skipped."
+  },
+  "/Users/james/Developer/Java/OOP3/src": {
+    "location": "/Users/james/Developer/Java/OOP3/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/Users/james/Developer/Java/OOP3/src\u0027. Skipped."
+  },
+  "/Users/james/Developer/Java/OOP4/src": {
+    "location": "/Users/james/Developer/Java/OOP4/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/Users/james/Developer/Java/OOP4/src\u0027. Skipped."
   }
 }

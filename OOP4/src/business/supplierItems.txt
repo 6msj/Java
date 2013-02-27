@@ -1,0 +1,7 @@
+EE-XX-ABC ' Kansports ' A Jansports knockoff backpack ' 20 '
+AK-47-AAA ' AK-47 ' An AK-47 rifle ' 200 '
+BE-CD-GGG ' Nokia ' The company Nokia ' 20000 '
+GO-OO-SE ' Goose ' A pet goose ' 150 '
+MO-US-E1 ' Mouse ' A mouse ' 5 '
+FI-SH-12 ' Fish ' A random fish ' 10 '
+

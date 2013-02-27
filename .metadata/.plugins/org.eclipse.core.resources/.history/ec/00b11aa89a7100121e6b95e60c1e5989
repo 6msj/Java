@@ -1,0 +1,32 @@
+package warehouse;
+
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+
+class Supplier {
+    protected String __Name__; // name of supplier
+    Brain __brain__; // the brain reads the file
+
+    public Supplier(String supplierName) throws FileNotFoundException {
+        __Name__ = supplierName;
+        __brain__ = new Brain(); // every supplier has a brain
+    }
+
+    public String getName() {
+        return __Name__;
+    }
+
+    public ArrayList<Item> getItemsInInventory() {
+        ArrayList<Item> itemList = __brain__.getItemList();
+        return itemList;
+    }
+
+    public ArrayList<Order> callBrainToGetOrders() {
+        __brain__.retrieveOrderList();
+        return __brain__.getOrderList(); // each supplier has its own orderlist it can retrieve from the brain
+    }
+
+    public void addOrderToBrain(Order order) {
+        __brain__.addOrder(order);
+    }
+}

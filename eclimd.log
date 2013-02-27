@@ -124,3 +124,52 @@
 2013-01-30 17:49:46,319 INFO  [org.eclim.eclipse.EclimDaemon] Stopping plugin org.eclim.core
 2013-01-30 17:49:46,323 INFO  [org.eclim.plugin.core.CorePlugin] Stopping plugin org.eclim.jdt
 2013-01-30 17:49:46,323 INFO  [org.eclim.eclipse.EclimDaemon] Eclim stopped.
+2013-02-07 14:08:29,425 INFO  [org.eclim.eclipse.EclimDaemon] Workspace: /Users/james/Developer/Java
+2013-02-07 14:08:29,429 INFO  [org.eclim.eclipse.EclimDaemon] Starting eclim...
+2013-02-07 14:08:29,445 INFO  [org.eclim.eclipse.EclimDaemon] Loading plugin org.eclim
+2013-02-07 14:08:29,447 INFO  [org.eclim.eclipse.EclimDaemon] Loading plugin org.eclim.core
+2013-02-07 14:08:29,556 INFO  [org.eclim.plugin.core.CorePlugin] Loading eclim plugins...
+2013-02-07 14:08:29,558 INFO  [org.eclim.plugin.core.CorePlugin] Loading plugin org.eclim.jdt
+2013-02-07 14:08:29,570 INFO  [org.eclim.plugin.core.CorePlugin] Plugins loaded.
+2013-02-07 14:08:29,570 INFO  [org.eclim.eclipse.EclimDaemon] Loaded plugin org.eclim.core
+2013-02-07 14:08:29,570 INFO  [org.eclim.eclipse.EclimDaemon] Eclim Server Started on: 127.0.0.1:9091
+2013-02-07 21:53:58,635 INFO  [org.eclim.eclipse.EclimDaemon] Workspace: /Users/james/Developer/Java
+2013-02-07 21:53:58,638 INFO  [org.eclim.eclipse.EclimDaemon] Starting eclim...
+2013-02-07 21:53:58,670 INFO  [org.eclim.eclipse.EclimDaemon] Loading plugin org.eclim
+2013-02-07 21:53:58,674 INFO  [org.eclim.eclipse.EclimDaemon] Loading plugin org.eclim.core
+2013-02-07 21:53:58,938 INFO  [org.eclim.plugin.core.CorePlugin] Loading eclim plugins...
+2013-02-07 21:53:58,942 INFO  [org.eclim.plugin.core.CorePlugin] Loading plugin org.eclim.jdt
+2013-02-07 21:53:58,961 INFO  [org.eclim.plugin.core.CorePlugin] Plugins loaded.
+2013-02-07 21:53:58,962 INFO  [org.eclim.eclipse.EclimDaemon] Loaded plugin org.eclim.core
+2013-02-07 21:53:58,963 INFO  [org.eclim.eclipse.EclimDaemon] Eclim Server Started on: 127.0.0.1:9091
+2013-02-08 19:22:46,311 INFO  [org.eclim.eclipse.EclimDaemon] Shutting down eclim...
+2013-02-08 19:22:46,318 INFO  [org.eclim.eclipse.EclimDaemon] Stopping plugin org.eclim.core
+2013-02-08 19:22:46,320 INFO  [org.eclim.plugin.core.CorePlugin] Stopping plugin org.eclim.jdt
+2013-02-08 19:22:46,321 INFO  [org.eclim.eclipse.EclimDaemon] Eclim stopped.
+2013-02-13 10:54:32,978 INFO  [org.eclim.eclipse.EclimDaemon] Workspace: /Users/james/Developer/Java
+2013-02-13 10:54:32,981 INFO  [org.eclim.eclipse.EclimDaemon] Starting eclim...
+2013-02-13 10:54:32,997 INFO  [org.eclim.eclipse.EclimDaemon] Loading plugin org.eclim
+2013-02-13 10:54:33,000 INFO  [org.eclim.eclipse.EclimDaemon] Loading plugin org.eclim.core
+2013-02-13 10:54:33,099 INFO  [org.eclim.plugin.core.CorePlugin] Loading eclim plugins...
+2013-02-13 10:54:33,101 INFO  [org.eclim.plugin.core.CorePlugin] Loading plugin org.eclim.jdt
+2013-02-13 10:54:33,103 INFO  [org.eclim.plugin.core.CorePlugin] Plugins loaded.
+2013-02-13 10:54:33,103 INFO  [org.eclim.eclipse.EclimDaemon] Loaded plugin org.eclim.core
+2013-02-13 10:54:33,104 INFO  [org.eclim.eclipse.EclimDaemon] Eclim Server Started on: 127.0.0.1:9091
+2013-02-13 15:43:00,351 INFO  [org.eclim.eclipse.EclimDaemon] Shutting down eclim...
+2013-02-13 15:43:00,355 INFO  [org.eclim.eclipse.EclimDaemon] Stopping plugin org.eclim.core
+2013-02-13 15:43:00,357 INFO  [org.eclim.plugin.core.CorePlugin] Stopping plugin org.eclim.jdt
+2013-02-13 15:43:00,357 INFO  [org.eclim.eclipse.EclimDaemon] Eclim stopped.
+2013-02-25 12:33:46,873 INFO  [org.eclim.eclipse.EclimDaemon] Workspace: /Users/james/Developer/Java
+2013-02-25 12:33:46,886 INFO  [org.eclim.eclipse.EclimDaemon] Home: /Applications/eclipse/plugins/org.eclim_2.2.5.40-ga43383d/
+2013-02-25 12:33:46,887 INFO  [org.eclim.eclipse.EclimDaemon] Starting eclim...
+2013-02-25 12:33:46,957 INFO  [org.eclim.eclipse.EclimDaemon] Loading plugin org.eclim
+2013-02-25 12:33:46,962 INFO  [org.eclim.eclipse.EclimDaemon] Loading plugin org.eclim.core
+2013-02-25 12:33:47,107 INFO  [org.eclim.plugin.core.CorePlugin] Loading eclim plugins...
+2013-02-25 12:33:47,112 INFO  [org.eclim.plugin.core.CorePlugin] Loading plugin org.eclim.jdt
+2013-02-25 12:33:47,116 INFO  [org.eclim.plugin.core.CorePlugin] Plugins loaded.
+2013-02-25 12:33:47,116 INFO  [org.eclim.eclipse.EclimDaemon] Loaded plugin org.eclim.core
+2013-02-25 12:33:47,117 INFO  [org.eclim.eclipse.EclimDaemon] Eclim Server Started on: 127.0.0.1:9091
+2013-02-25 23:52:40,810 INFO  [org.eclim.eclipse.EclimDaemon] Shutting down eclim...
+2013-02-25 23:52:40,825 INFO  [org.eclim.eclipse.EclimDaemon] Stopping plugin org.eclim.core
+2013-02-25 23:52:40,829 INFO  [org.eclim.plugin.core.CorePlugin] Stopping plugin org.eclim.jdt
+2013-02-25 23:52:40,830 INFO  [org.eclim.eclipse.EclimDaemon] Eclim stopped.

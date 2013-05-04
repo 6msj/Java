@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/Applications/NetBeans/glassfish-3.1.2.2/javadb/lib/derby.jar"/>
+	<classpathentry kind="lib" path="/Applications/NetBeans/glassfish-3.1.2.2/javadb/lib/derbyclient.jar"/>
+	<classpathentry kind="lib" path="/Applications/NetBeans/glassfish-3.1.2.2/javadb/lib/derbynet.jar"/>
+	<classpathentry kind="lib" path="eclipselink-2.3.2.jar"/>
+	<classpathentry kind="lib" path="javax.persistence-2.0.3.jar"/>
+	<classpathentry kind="lib" path="org.eclipse.persistence.jpa.jpql_1.0.1.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>

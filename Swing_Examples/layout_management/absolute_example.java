@@ -3,10 +3,10 @@ import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 
 
-public class AbsoluteExample extends JFrame {
+public class absolute_example extends JFrame {
 
 
-    public AbsoluteExample() {
+    public absolute_example() {
 
         initUI();
     }
@@ -35,7 +35,7 @@ public class AbsoluteExample extends JFrame {
         SwingUtilities.invokeLater(new Runnable() {
 
             public void run() {
-                AbsoluteExample ex = new AbsoluteExample();
+                absolute_example ex = new absolute_example();
                 ex.setVisible(true);
             }
         });
